@@ -1,13 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        /* background-color: aqua;
+        color: white; */
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+
+      .animation {
+        opacity: 0;
+        transform: translateX(-300px);
+        transition: all 0.7s ease-out;
+        transition-delay: 0.4s;
+      }
+
+      .scroll-animation {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <section>
+      <h1>Here we go!</h1>
+    </section>
+    <section>
+      <h2 class="animation">What I do</h2>
+      <p class="animation">
+        Welcome to my page, My name is Mwendwa Bundi. I am a front-end developer
+        and technical writer. Tell me about you!
+      </p>
+    </section>
+    <section>
+      <h1 class="animation">Here we go. Again!</h1>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>
